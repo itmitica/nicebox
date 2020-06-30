@@ -8,6 +8,7 @@ write iso to usb portable memory stick
 ## nice firmware
 identify non-free firmware for devices in your machine: wifi, bluetooth etc  
 look for it on debian non-free: http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/  
+look for it on kernel: https://packages.debian.org/buster/kernel/  
 download and copy to "firmware" directory on the usb portable memory stick  
 
 ## nice install
