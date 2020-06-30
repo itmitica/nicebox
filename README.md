@@ -16,23 +16,23 @@ boot from usb and install only system utilities: uncheck Debian desktop environ 
 
 ## nice ad-hoc wifi
 go back on the last step, to a shell  
-if target directory has no etc/network, create it  
-cp /etc/network/interfaces /target/etc/network/  
+if `target` directory has no `etc/network`, create it  
+`cp /etc/network/interfaces /target/etc/network/`  
 reboot  
 
 ## nice apps
 
 ### security
 clamav / clamav-daemon / clamtk  
-(su) gufw  
+(`su`) gufw  
 
 ### sysutils
 htop  
 numlockx  
 rofi / rofi-theme-selector  
-vim-gtk (clipboard+: [Shift] + ["] + [+], y)  
+vim-gtk (clipboard+: `Shift + " + +, y`)  
 vifm  
-xfce4-terminal (xfce4-terminal --tab --command '[]' &)  
+xfce4-terminal (`xfce4-terminal --tab --command ' ' &`)  
 
 ### device utils
 blueman  
