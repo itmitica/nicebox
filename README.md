@@ -1,7 +1,7 @@
 # nicebox
 nice openbox
 
-## nice iso
+## nice debian
 download debian netinst iso  
 write iso to usb portable memory stick  
 
