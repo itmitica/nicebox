@@ -29,7 +29,7 @@ clamav / clamav-daemon / clamtk
 ### sysutils
 htop  
 numlockx  
-rofi / rofi-theme-selector  
+rofi (`rofi-theme-selector`)  
 vim-gtk (clipboard+: `Shift + " + +, y`)  
 vifm  
 xfce4-terminal (`xfce4-terminal --tab --command ' ' &`)  
