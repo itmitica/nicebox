@@ -42,11 +42,10 @@ pulseaudio-module-bluetooth
 wicd / wicd-curses / wicd-cli  
 
 ### nice utils
-feh
-galculator
-git
-gucharmap
-links2 (`link2 -g`)
-mpv
-vivaldi ("sbin folder not in path" issue with missing libraries, use `su -l` then `dpkg -i /home/mit/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb`)
-
+feh  
+galculator  
+git  
+gucharmap  
+links2 (`link2 -g`)  
+mpv  
+vivaldi ("sbin folder not in path" issue with missing libraries, use `su -l` then `dpkg -i /home/mit/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb`)  
