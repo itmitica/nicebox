@@ -1,2 +1,2 @@
-# verbox
-ver(bose) (open)box
+# nicebox
+nice openbox
