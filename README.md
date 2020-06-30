@@ -22,3 +22,20 @@ reboot
 
 ## nice apps
 
+### security
+clamav / clamav-daemon / clamtk
+(su) gufw
+
+### sysutils
+htop
+numlockx
+rofi / rofi-theme-selector
+vim-gtk (clipboard+: [Shift] + ["] + [+], y)
+vifm
+xfce4-terminal (xfce4-terminal --tab --command '[]' &)
+
+### device utils
+blueman
+intel-microcode
+pavucontrol
+pulseaudio-module-bluetooth
