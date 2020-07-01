@@ -39,7 +39,7 @@ blueman
 intel-microcode  
 pavucontrol  
 pulseaudio-module-bluetooth  
-wicd / wicd-curses / wicd-cli  
+wicd / wicd-curses / wicd-cli (maybe change to `nl80211`)  
 
 ### nice utils
 feh  
