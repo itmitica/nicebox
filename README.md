@@ -32,6 +32,7 @@ numlockx
 rofi (`rofi-theme-selector`)  
 vim-gtk (clipboard+: `Shift + " + +, y`)  
 vifm  
+xfce4-power-manager  
 xfce4-terminal (`xfce4-terminal --tab --command ' ' &`)  
 
 ### device utils
