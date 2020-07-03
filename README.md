@@ -74,7 +74,7 @@ as user, set `LC_TIME` and other `LC_` in `.xsessionrc`
 feh --bg-fill ~/bin/media/walls/simpledesktops.png &
 numlockx on &
 redshift -P -O 5500 &
-# setxkbmap -layout "us,ro(std)" -option "grp:alt_shift_toggle" &
+setxkbmap -layout "us"
 ```
 #### rc.xml
 comment out `<menu, context:root>` branch to disable the right-click pipe menu  
