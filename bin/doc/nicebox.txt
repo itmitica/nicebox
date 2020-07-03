@@ -17,7 +17,6 @@ blueman
 clamav
 clamav-daemon
 clamtk
-compton
 feh
 galculator
 git
@@ -72,7 +71,6 @@ feh --bg-fill ~/bin/media/walls/simpledesktops.png &
 numlockx on &
 redshift -P -O 5500 &
 # setxkbmap -layout "us,ro(std)" -option "grp:alt_shift_toggle" &
-# compton -b -cC -r2 -o0.5 -l-2 -t-2 -m0.95 -i0.95 -e0.95 -z &
 
     rc.xml
 comment out <menu, context:root> to disable the right-click pipe menu
