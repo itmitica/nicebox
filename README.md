@@ -63,10 +63,10 @@ run su with login: `su -l`
 
 ### locales
 to add a new locale
-`su -l`
+`su -l`  
 `dpkg-reconfigure locales`  
 add `ro`  
-set `LC_TIME` and other `LC_` in `.xsessionrc`  
+as user, set `LC_TIME` and other `LC_` in `.xsessionrc`  
 
 ### openbox
 #### autostart
