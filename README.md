@@ -52,3 +52,82 @@ mpv
 vivaldi ("sbin folder not in path" issue with missing libraries, use `su -l` then `dpkg -i ~/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb`)  
 
 ## nice setup
+### missing sbin in path
+run su with login: `su -l`  
+
+### power management
+`xfce4-power-manager`
+
+### timezone
+`timedatectl set-timezone Europe/Bucharest`
+
+### locales TBD
+to change first day of the week to Monday  
+`dpkg-reconfigure locales`  
+add `ro`  
+set `LC_TIME` in `.xsessionrc`  
+
+### openbox
+#### autostart
+```
+feh --bg-fill ~/bin/media/walls/simpledesktops.png &
+numlockx on &
+redshift -P -O 5500 &
+# setxkbmap -layout "us,ro(std)" -option "grp:alt_shift_toggle" &
+# compton -b -cC -r2 -o0.5 -l-2 -t-2 -m0.95 -i0.95 -e0.95 -z &
+```
+#### rc.xml
+comment out `<menu, context:root>` branch to disable the right-click pipe menu  
+use rofi  
+```
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>rofi -combi-modi "window,drun,run" -show combi -modi combi</command>
+      </action>
+    </keybind>
+```
+
+### ~/bin utils, run with rofi
+
+#### openbox exit
+##### obe.sh
+```
+#!/bin/sh
+openbox --exit
+```
+
+#### openbox restart
+##### obr.sh
+```
+#!/bin/sh
+openbox --restart
+```
+
+#### keyboard layouts
+##### kbden.sh
+```
+#!/bin/sh
+setxkbmap -layout "us"
+```
+
+##### kbdro.sh
+```
+#!/bin/sh
+setxkbmap -layout "ro(std)" 
+```
+
+#### status report TBD
+##### sr.sh
+```
+#!/bin/sh
+clear
+echo '\nSTATUS REPORT\n'
+date +'%a %_d   %H:%M'
+echo
+ncal
+echo
+DISPLAY=:0 xset q | grep -i 'caps'| sed -e 's/^\s*//' | tr -s [:blank:] | sed -e 's/00: //g' | sed -e "s/0[1-2]: /\t\t\t/g"
+echo
+wicd-cli -i
+echo '\n'
+```
