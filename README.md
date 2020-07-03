@@ -61,11 +61,12 @@ run su with login: `su -l`
 ### timezone
 `timedatectl set-timezone Europe/Bucharest`
 
-### locales TBD
-to change first day of the week to Monday  
+### locales
+to add a new locale
+`su -l`
 `dpkg-reconfigure locales`  
 add `ro`  
-set `LC_TIME` in `.xsessionrc`  
+set `LC_TIME` and other `LC_` in `.xsessionrc`  
 
 ### openbox
 #### autostart
@@ -124,7 +125,7 @@ clear
 echo '\nSTATUS REPORT\n'
 date +'%a %_d   %H:%M'
 echo
-cal
+ncal -b -M
 echo
 echo -n 'Keyboard '
 setxkbmap -query | grep 'layout'
