@@ -1,0 +1,4 @@
+feh --bg-fill ~/bin/media/walls/simpledesktops.png &
+numlockx on &
+redshift -P -O 5500 &
+setxkbmap -layout "us" &

@@ -1,0 +1,135 @@
+debian netinst
+==============
+download netinst iso
+write iso to usb portable memory stick
+identify non-free firmware for devices in your machine: wifi, bluetooth etc
+look for it on debian non-free
+copy to "firmware" directory on the usb portable memory stick
+boot from usb and install only system utilities: uncheck Debian desktop environ etc
+go back on the last step, to a shell
+if target directory has no etc/network, create it
+cp /etc/network/interfaces /target/etc/network/
+reboot
+
+apt install
+===========
+blueman
+clamav
+clamav-daemon
+clamtk
+compton
+feh
+galculator
+git
+gucharmap
+gufw (su for setup)
+intel-microcode
+htop
+links2 (for graphical mode, launch with: links2 -g)
+mpv
+numlockx
+pavucontrol
+pulseaudio-module-bluetooth
+redshift (redshift -P -O 4500)
+rofi (rofi-theme-selector)
+vivaldi (sbin folder not in path, use "su -l", "dpkg -i /home/mit/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb")
+vim-gtk (has +clipboard: <Shif>t + <"> + <+>, yy)
+vifm
+xfce4-power-manager
+xfce4-terminal (new tab, launch with: xfce4-terminal --tab --command '' &)
+wicd
+wicd-curses
+wicd-cli
+
+setup
+=====
+
+missing sbin in path
+--------------------
+run su with login: su -l
+
+power management
+----------------
+xfce4-power-manager
+
+timezone
+--------
+timedatectl set-timezone Europe/Bucharest
+
+add a new locale
+----------------
+su -l
+dpkg-reconfigure locales
+add ro
+locale-gen
+
+as user, check locale and export in .xsessionrc: LC_TIME etc
+
+openbox
+-------
+    autostart
+feh --bg-fill ~/bin/media/walls/simpledesktops.png &
+numlockx on &
+redshift -P -O 5500 &
+# setxkbmap -layout "us,ro(std)" -option "grp:alt_shift_toggle" &
+# compton -b -cC -r2 -o0.5 -l-2 -t-2 -m0.95 -i0.95 -e0.95 -z &
+
+    rc.xml
+comment out <menu, context:root> to disable the right-click pipe menu
+use rofi:
+    <keybind key="W-r">
+      <action name="Execute">
+        <command>rofi -combi-modi "window,drun,run" -show combi -modi combi</command>
+      </action>
+    </keybind>
+
+~/bin utils, run with rofi
+==========================
+
+openbox exit
+------------
+    obe.sh
+#!/bin/sh
+openbox --exit
+
+openbox restart
+---------------
+    obr.sh
+#!/bin/sh
+openbox --restart
+
+keyboard layouts
+----------------
+    kbden.sh
+#!/bin/sh
+setxkbmap -layout "us"
+
+    kbdro.sh
+#!/bin/sh
+setxkbmap -layout "ro(std)" 
+
+status report
+-------------
+    sr.sh
+#!/bin/sh
+clear
+echo '\nSTATUS REPORT\n'
+date +'%t%t%H:%M'
+echo
+ncal -b -M
+echo
+echo -n 'Keyboard '
+setxkbmap -query | grep 'layout'
+echo
+DISPLAY=:0 xset q | grep -i 'caps'| sed -e 's/^\s*//' | tr -s [:blank:] | sed -e 's/00: //g' | sed -e "s/0[1-2]: /\t\t\t/g"
+echo 
+wicd-cli -i
+echo '\n'
+stty -icanon; dd ibs=1 count=1 >/dev/null 2>&1
+
+run status report
+-----------------
+    rsr.sh
+#!/bin/sh
+xfce4-terminal -x ~/bin/sr.sh | less
+
