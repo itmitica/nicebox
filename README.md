@@ -1,6 +1,31 @@
 # nicebox
 nice openbox
 
+## nice shortcuts
+### openbox
+`W-r` rofi   
+`A-f4` close window   
+`C-A->` next workspace   
+`C-A-<` previous workspace   
+`A-tab` cycle apps   
+### xfce4-terminal
+`C-S-t` new tab   
+`C-S-w` close tab   
+`C-PageDown` cycle tabs to the right   
+`C-PageUp` cycle tabs to the left   
+### vifm
+`f3` view file in editor   
+`w` toggle preview file in the other panel  
+`space` toggle select   
+`f5` copy to directory in the other panel   
+`f6` move to directory in the other panel   
+`f7` create directory   
+`C-t` new tab   
+`C-w` close tab   
+`ngt` go to tab number n   
+`s` drop to shell   
+`delete` delete   
+
 ## nice debian
 download debian netinst iso  
 write iso to usb portable memory stick  
