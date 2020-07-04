@@ -43,7 +43,7 @@ nice openbox
 `gg` go to top   
 `f` links   
 `/` search on page   
-`n` next serch on page result   
+`n` next search on page result   
 
 ## nice debian
 download debian netinst iso  
