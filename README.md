@@ -2,18 +2,22 @@
 nice openbox
 
 ## nice shortcuts
+
 ### openbox
 `W-r` rofi: switch running apps, launch apps, run commands    
 `A-f4` close window   
 `C-A->` next workspace   
 `C-A-<` previous workspace   
 `A-tab` cycle apps   
+
 ### xfce4-terminal
 `C-S-t` new tab   
 `C-S-w` close tab   
 `C-PageDown` cycle tabs to the right   
 `C-PageUp` cycle tabs to the left   
+
 ### vifm
+`tab` switch panel
 `f3` view file in editor   
 `w` toggle preview file in the other panel  
 `space` toggle select   
@@ -25,6 +29,17 @@ nice openbox
 `ngt` go to tab number n   
 `s` drop to shell   
 `delete` delete   
+
+### vivaldi
+`C-t` new tab   
+`C-w` close tab   
+`C-tab` cycle tabs to the right   
+`C-S-tab` cycle tabs to the left   
+
+#### vimium
+`f` links   
+`/` search   
+`n` next serch result   
 
 ## nice debian
 download debian netinst iso  
