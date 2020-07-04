@@ -3,7 +3,7 @@ nice openbox
 
 ## nice shortcuts
 ### openbox
-`W-r` rofi   
+`W-r` rofi: switch running apps, launch apps, run commands    
 `A-f4` close window   
 `C-A->` next workspace   
 `C-A-<` previous workspace   
