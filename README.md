@@ -38,9 +38,9 @@ nice openbox
 
 #### vimium
 `d` half page down   
-`u` half page up
-`S-g` go to bottom
-`gg` go to top
+`u` half page up   
+`S-g` go to bottom   
+`gg` go to top   
 `f` links   
 `/` search on page   
 `n` next serch on page result   
