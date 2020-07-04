@@ -37,9 +37,13 @@ nice openbox
 `C-S-tab` cycle tabs to the left   
 
 #### vimium
+`d` half page down   
+`u` half page up
+`S-g` go to bottom
+`gg` go to top
 `f` links   
-`/` search   
-`n` next serch result   
+`/` search on page   
+`n` next serch on page result   
 
 ## nice debian
 download debian netinst iso  
