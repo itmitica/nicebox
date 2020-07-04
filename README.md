@@ -17,7 +17,7 @@ nice openbox
 `C-PageUp` cycle tabs to the left   
 
 ### vifm
-`tab` switch panel
+`tab` switch panel   
 `f3` view file in editor   
 `w` toggle preview file in the other panel  
 `space` toggle select   
