@@ -18,15 +18,16 @@ nice openbox
 
 ### vifm
 `tab` switch panel   
-`f3` view file in editor   
-`w` toggle preview file in the other panel  
 `space` toggle select   
+`w` toggle preview file in the other panel  
+`f3` view file in editor   
+`f4` edit file in editor   
 `f5` copy to directory in the other panel   
 `f6` move to directory in the other panel   
 `f7` create directory   
 `C-t` new tab   
 `C-w` close tab   
-`ngt` go to tab number n   
+`ngt` go to tab number n, e.g. `2gt`   
 `s` drop to shell   
 `delete` delete   
 
