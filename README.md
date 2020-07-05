@@ -4,7 +4,7 @@ nice openbox
 ## nice shortcuts
 
 ### openbox
-`W-r` rofi: switch running apps, launch apps, run commands    
+`W-r` rofi: switch running apps, launch apps, run commands, run custom `~/bin` "trick shots" like `kbden.sh` `kbdro.sh` `obe.sh` `obr.sh` `pm.sh` `rsr.sh`    
 `A-f4` close window   
 `C-A->` next workspace   
 `C-A-<` previous workspace   
