@@ -160,6 +160,13 @@ setxkbmap -layout "us"
 setxkbmap -layout "ro(std)" 
 ```
 
+#### park mouse
+##### pm.sh
+```
+#!/bin/sh
+xdotool mousemove 5000 5000
+```
+
 #### status report
 ##### sr.sh
 ```

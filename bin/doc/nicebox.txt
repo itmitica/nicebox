@@ -34,6 +34,7 @@ rofi (rofi-theme-selector)
 vivaldi (sbin folder not in path, use "su -l", "dpkg -i /home/mit/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb")
 vim-gtk (has +clipboard: <Shif>t + <"> + <+>, yy)
 vifm
+xdotool
 xfce4-power-manager
 xfce4-terminal (new tab, launch with: xfce4-terminal --tab --command '' &)
 wicd
@@ -105,6 +106,12 @@ setxkbmap -layout "us"
     kbdro.sh
 #!/bin/sh
 setxkbmap -layout "ro(std)" 
+
+park mouse
+----------
+    pm.sh
+#!/bin/sh
+xdotool mousemove 5000 5000
 
 status report
 -------------
