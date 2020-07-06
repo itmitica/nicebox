@@ -57,7 +57,8 @@ look for it in the kernel subsection: https://packages.debian.org/buster/kernel/
 download and copy to `firmware` directory on the usb portable memory stick  
 
 ## nice install
-boot from usb and install only system utilities: uncheck Debian desktop environ etc  
+boot from usb and install only system utilities: uncheck Debian desktop environ etc   
+create your "user"
 
 ## nice ad-hoc wifi
 go back on the last step, to a shell  
@@ -66,14 +67,16 @@ if `target` directory has no `etc/network`, create it
 
 ## nice download
 reboot  
-login as normal user   
+login as "user"   
 ```
 su -l   
+cd Downloads
 wget https://github.com/itmitica/nicebox/archive/master.zip   
 unzip master.zip   
-cd master   
-./apps.sh   
-cp home/* home/user/   
+./nicebox-master/bin/apps.sh   
+cp -rT nicebox-master/bin/setup/home/ home/"user"/
+rm master.zip
+rm -r nicebox-master
 ```   
 
 ## nice apps
