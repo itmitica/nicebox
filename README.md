@@ -74,6 +74,7 @@ cd Downloads
 wget https://github.com/itmitica/nicebox/archive/master.zip   
 unzip master.zip   
 ./nicebox-master/bin/apps.sh   
+cp -r nicebox-master/bin/ /home/"user"/    
 cp -rT nicebox-master/bin/setup/home/ /home/"user"/
 rm master.zip
 rm -r nicebox-master
