@@ -27,6 +27,7 @@ htop
 links2 (for graphical mode, launch with: links2 -g)
 mpv
 numlockx
+openbox
 pavucontrol
 pulseaudio-module-bluetooth
 redshift (redshift -P -O 4500)
@@ -37,6 +38,7 @@ vifm
 xdotool
 xfce4-power-manager
 xfce4-terminal (new tab, launch with: xfce4-terminal --tab --command '' &)
+xinit
 wicd
 wicd-curses
 wicd-cli

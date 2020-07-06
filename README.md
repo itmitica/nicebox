@@ -64,6 +64,10 @@ go back on the last step, to a shell
 if `target` directory has no `etc/network`, create it  
 `cp /etc/network/interfaces /target/etc/network/`  
 reboot  
+login   
+download from gihthub/itmitica/nicebox   
+run apps.sh   
+copy home folder   
 
 ## nice apps
 
