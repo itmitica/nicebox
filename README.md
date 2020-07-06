@@ -59,16 +59,22 @@ download and copy to `firmware` directory on the usb portable memory stick
 ## nice install
 boot from usb and install only system utilities: uncheck Debian desktop environ etc  
 
-### nice ad-hoc wifi
+## nice ad-hoc wifi
 go back on the last step, to a shell  
 if `target` directory has no `etc/network`, create it  
 `cp /etc/network/interfaces /target/etc/network/`  
-   
+
+## nice download
 reboot  
-login   
-download from `github.com/itmitica/nicebox`   
-run `apps.sh`   
-copy `home` directory    
+login as normal user   
+```
+su -l   
+wget https://github.com/itmitica/nicebox/archive/master.zip   
+unzip master.zip   
+cd master   
+./apps.sh   
+cp home/* home/user/   
+```   
 
 ## nice apps
 
