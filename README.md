@@ -231,3 +231,6 @@ $ i3status | xmobar
 
 #### security   
 `rkhunter` Rootkit Hunter   
+
+#### utils
+`apparix` console-based bookmark tool for fast file system navigation   
