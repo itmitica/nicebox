@@ -89,8 +89,8 @@ clamav / clamav-daemon / clamtk
 ### sysutils
 htop  
 numlockx  
-pmount
-rofi (`rofi-theme-selector`)  
+pmount   
+rofi (`rofi-theme-selector`)    
 vim-gtk (clipboard+: `Shift + " + +, y`)  
 vifm  
 xfce4-power-manager  
