@@ -226,3 +226,6 @@ $ lsblk -- check if unmounted succesfully
 ```
 $ i3status | xmobar   
 ```
+
+#### security   
+`rkhunter` Rootkit Hunter   
