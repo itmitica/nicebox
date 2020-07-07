@@ -69,15 +69,15 @@ if `target` directory has no `etc/network`, create it
 reboot  
 login as "user"   
 ```
-su -l   
-cd Downloads
-wget https://github.com/itmitica/nicebox/archive/master.zip   
-unzip master.zip   
-./nicebox-master/bin/apps.sh   
-cp -r nicebox-master/bin/ /home/"user"/    
-cp -rT nicebox-master/bin/setup/home/ /home/"user"/
-rm master.zip
-rm -r nicebox-master
+$ su -l   
+# cd Downloads
+# wget https://github.com/itmitica/nicebox/archive/master.zip   
+# unzip master.zip   
+# ./nicebox-master/bin/apps.sh   
+# cp -r nicebox-master/bin/ /home/"user"/    
+# cp -rT nicebox-master/bin/setup/home/ /home/"user"/
+# rm master.zip
+# rm -r nicebox-master
 ```   
 
 ## nice apps
@@ -89,6 +89,7 @@ clamav / clamav-daemon / clamtk
 ### sysutils
 htop  
 numlockx  
+pmount
 rofi (`rofi-theme-selector`)  
 vim-gtk (clipboard+: `Shift + " + +, y`)  
 vifm  
@@ -123,8 +124,8 @@ run su with login: `su -l`
 
 ### locales
 to add a new locale
-`su -l`  
-`dpkg-reconfigure locales`  
+`$ su -l`  
+`# dpkg-reconfigure locales`  
 add `ro`  
 as user, set `LC_TIME` and other `LC_` in `.xsessionrc`  
 
@@ -208,4 +209,14 @@ stty -icanon; dd ibs=1 count=1 >/dev/null 2>&1
 ```
 #!/bin/sh
 xfce4-terminal -x ~/bin/sr.sh
+```
+
+### nice mount
+```
+$ lsblk -- check devs and mount pts 
+$ pmount /dev/sdb1
+$ lsblk -- check if mount point has been created: /media/sdb1
+$ -- user play
+$ pumount /dev/sdb1
+$ lsblk -- check if unmounted succesfully
 ```
