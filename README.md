@@ -87,6 +87,7 @@ clamav / clamav-daemon / clamtk
 (`su`) gufw  
 
 ### sysutils
+firmware-misc-nonfree
 htop  
 numlockx  
 pmount   
@@ -97,6 +98,7 @@ xfce4-power-manager
 xfce4-terminal (`xfce4-terminal --tab --command ' ' &`)  
 
 ### device utils
+amd64-microcode
 blueman  
 intel-microcode  
 pavucontrol  
@@ -104,13 +106,13 @@ pulseaudio-module-bluetooth
 wicd / wicd-curses / wicd-cli (maybe change to `nl80211`)  
 
 ### nice utils
+chromium
 feh  
 galculator  
 git  
 gucharmap  
 links2 (`link2 -g`)  
 mpv  
-vivaldi ("sbin folder not in path" issue with missing libraries, use `su -l` then `dpkg -i ~/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb`)  
 
 ## nice setup
 ### missing sbin in path

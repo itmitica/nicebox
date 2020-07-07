@@ -14,10 +14,12 @@ reboot
 apt install
 ===========
 blueman
+chromium
 clamav
 clamav-daemon
 clamtk
 feh
+firmware-misc-nonfree
 galculator
 git
 gucharmap
@@ -32,7 +34,6 @@ pavucontrol
 pulseaudio-module-bluetooth
 redshift (redshift -P -O 4500)
 rofi (rofi-theme-selector)
-vivaldi (sbin folder not in path, use "su -l", "dpkg -i /home/mit/Downloads/vivaldi-stable_3.1.1929.45-1_amd64.deb")
 vim-gtk (has +clipboard: <Shif>t + <"> + <+>, yy)
 vifm
 xdotool
