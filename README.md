@@ -123,11 +123,13 @@ run su with login: `su -l`
 `timedatectl set-timezone Europe/Bucharest`
 
 ### locales
-to add a new locale
-`$ su -l`  
-`# dpkg-reconfigure locales`  
+to add a new locale   
+```
+$ su -l  
+# dpkg-reconfigure locales
+```
 add `ro`  
-as user, set `LC_TIME` and other `LC_` in `.xsessionrc`  
+as user, you can set `LC_TIME` and other `LC_` in `.xsessionrc`  
 
 ### openbox
 #### autostart
