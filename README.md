@@ -220,3 +220,9 @@ $ -- user play
 $ pumount /dev/sdb1
 $ lsblk -- check if unmounted succesfully
 ```
+
+### nice optionals
+#### status bar
+```
+$ i3status | xmobar   
+```
