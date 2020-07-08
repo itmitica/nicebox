@@ -172,7 +172,7 @@ git
 
 gucharmap
 
-links2 `$ link2 -g`
+links2 `$ links2 -g`
 
 mpv
 
