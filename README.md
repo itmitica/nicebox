@@ -80,7 +80,7 @@ nice openbox
 `n` next search on page result
 
 ## nice debian
-download debian [**hybrid** iso](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/) so that files (e.g. firmware files) can be added later to usb flash memory
+download debian **non-free** iso e.g. [amd64](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/10.4.0+nonfree/amd64/iso-cd/firmware-10.4.0-amd64-netinst.iso)
 
 write iso to usb flash memory
 ```
