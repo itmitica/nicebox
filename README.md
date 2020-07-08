@@ -127,7 +127,7 @@ $ su -l
 ### security
 clamav / clamav-daemon / clamtk
 
-(`su`) gufw
+`# gufw`
 
 ### sysutils
 firmware-misc-nonfree
@@ -138,15 +138,15 @@ numlockx
 
 pmount
 
-rofi (`rofi-theme-selector`)
+rofi `$ rofi-theme-selector`
 
-vim-gtk (clipboard+: `Shift + " + +, y`)
+vim-gtk, has clipboard+ `Shift + " + +, y`
 
 vifm
 
 xfce4-power-manager
 
-xfce4-terminal (`xfce4-terminal --tab --command ' ' &`)
+xfce4-terminal `$ xfce4-terminal --tab --command ' ' &`
 
 ### device utils
 amd64-microcode
@@ -172,7 +172,7 @@ git
 
 gucharmap
 
-links2 (`link2 -g`)
+links2 `$ link2 -g`
 
 mpv
 
@@ -181,10 +181,10 @@ mpv
 run su with login: `su -l`
 
 ### power management
-`xfce4-power-manager`
+`$ xfce4-power-manager`
 
 ### timezone
-`timedatectl set-timezone Europe/Bucharest`
+`$ timedatectl set-timezone Europe/Bucharest`
 
 ### locales
 to add a new locale
