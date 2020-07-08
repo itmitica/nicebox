@@ -1,62 +1,62 @@
 # nicebox
-nice openbox
+nice openbox\
 
 ## nice shortcuts
 
 ### openbox
-`W-r` rofi: switch running apps, launch apps, run commands, run custom `~/bin` "trick shots" like `kbden.sh` `kbdro.sh` `obe.sh` `obr.sh` `pm.sh` `rsr.sh`    
-`A-f4` close window   
-`A-space` window menu
-`F10` app menu
-`C-A->` next workspace   
-`C-A-<` previous workspace   
-`A-tab` cycle apps   
+`W-r` rofi: switch running apps, launch apps, run commands, run custom `~/bin` "trick shots" like `kbden.sh` `kbdro.sh` `obe.sh` `obr.sh` `pm.sh` `rsr.sh`\
+`A-f4` close window\
+`A-space` window menu\
+`F10` app menu\
+`C-A->` next workspace\
+`C-A-<` previous workspace\
+`A-tab` cycle apps\
 
 ### xfce4-terminal
-`C-S-t` new tab   
-`C-S-w` close tab   
-`C-PageDown` cycle tabs to the right   
-`C-PageUp` cycle tabs to the left   
+`C-S-t` new tab\
+`C-S-w` close tab\
+`C-PageDown` cycle tabs to the right\
+`C-PageUp` cycle tabs to the left\
 
 ### vifm
-`tab` switch panel   
-`space` toggle select   
-`w` toggle preview file in the other panel  
-`f3` view file in editor   
-`f4` edit file in editor   
-`f5` copy to directory in the other panel   
-`f6` move to directory in the other panel   
-`f7` create directory   
-`C-t` new tab   
-`C-w` close tab   
-`ngt` go to tab number n, e.g. `2gt`   
-`s` drop to shell   
-`delete` delete   
+`tab` switch panel\
+`space` toggle select\
+`w` toggle preview file in the other panel\
+`f3` view file in editor\
+`f4` edit file in editor\  
+`f5` copy to directory in the other panel\
+`f6` move to directory in the other panel\  
+`f7` create directory\
+`C-t` new tab\
+`C-w` close tab\
+`ngt` go to tab number n, e.g. `2gt`\
+`s` drop to shell\
+`delete` delete\
 
 ### vivaldi
-`C-t` new tab   
-`C-w` close tab   
-`C-tab` cycle tabs to the right   
-`C-S-tab` cycle tabs to the left   
+`C-t` new tab\
+`C-w` close tab\
+`C-tab` cycle tabs to the right\
+`C-S-tab` cycle tabs to the left\
 
 #### vimium
-`d` half page down   
-`u` half page up   
-`S-g` go to bottom   
-`gg` go to top   
-`f` links   
-`/` search on page   
-`n` next search on page result   
+`d` half page down\
+`u` half page up\
+`S-g` go to bottom\
+`gg` go to top\
+`f` links\
+`/` search on page\
+`n` next search on page result\
 
 ## nice debian
-download debian netinst iso  
-write iso to usb portable memory stick  
+download debian netinst iso\
+write iso to usb portable memory stick\
 
 ## nice firmware
-identify non-free firmware for devices in your machine: wifi, bluetooth etc  
-look for it in the non-free archive: http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/  
-look for it in the kernel subsection: https://packages.debian.org/buster/kernel/  
-download and copy to `firmware` directory on the usb portable memory stick  
+identify non-free firmware for devices in your machine: wifi, bluetooth etc\
+look for it in the non-free archive: http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/\
+look for it in the kernel subsection: https://packages.debian.org/buster/kernel/\
+download and copy to `firmware` directory on the usb portable memory stick\
 
 ## nice install
 boot from usb and install only system utilities: uncheck Debian desktop environ etc   
