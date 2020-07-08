@@ -55,7 +55,7 @@ nice openbox
 
 `delete` delete
 
-### vivaldi
+### chromium
 `C-t` new tab
 
 `C-w` close tab
