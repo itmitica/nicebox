@@ -60,9 +60,9 @@ nice openbox
 
 `C-w` close tab
 
-`C-tab` cycle tabs to the right
+`C-tab` | `C-PageDown` cycle tabs to the right
 
-`C-S-tab` cycle tabs to the left
+`C-S-tab` | `C-PageUp` cycle tabs to the left
 
 #### vimium
 `d` half page down
@@ -82,14 +82,20 @@ nice openbox
 ## nice debian
 download debian netinst iso
 
-write iso to usb portable memory stick
+write iso to usb flash memory
+```
+# lsblk --find usb flash memory device: e.g. /dev/sdb
+# dd if=debian-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync --write iso
+`
 
 ## nice firmware
 identify non-free firmware for devices in your machine: wifi, bluetooth etc
 
-look for it in the [kernel subsection] (https://packages.debian.org/buster/kernel/)
+look for it in the [kernel subsection](https://packages.debian.org/buster/kernel/)
 
-or download the [non-free firmware zip archive] (http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/) and copy the extracted files in the `firmware` directory on the usb portable memory stick
+or download the [non-free firmware archive](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/)
+
+and copy the (extracted) files to the `firmware` directory on the usb flash memory 
 
 ## nice install
 boot from usb and install only system utilities: uncheck Debian desktop environ etc
