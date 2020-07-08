@@ -87,11 +87,9 @@ write iso to usb portable memory stick
 ## nice firmware
 identify non-free firmware for devices in your machine: wifi, bluetooth etc
 
-look for it in the non-free archive: http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/
+look for it in the [kernel subsection] (https://packages.debian.org/buster/kernel/)
 
-look for it in the kernel subsection: https://packages.debian.org/buster/kernel/
-
-download and copy to `firmware` directory on the usb portable memory stick
+or download the [non-free firmware zip archive] (http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/) and copy the extracted files in the `firmware` directory on the usb portable memory stick
 
 ## nice install
 boot from usb and install only system utilities: uncheck Debian desktop environ etc
@@ -149,11 +147,7 @@ xfce4-power-manager
 xfce4-terminal `$ xfce4-terminal --tab --command ' ' &`
 
 ### device utils
-amd64-microcode
-
 blueman
-
-intel-microcode
 
 pavucontrol
 
