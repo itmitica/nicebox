@@ -79,18 +79,24 @@ nice openbox
 
 `n` next search on page result
 
-## nice debian
+## nice firmware - the easy way
 download debian **non-free** iso e.g. [amd64](http://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/10.4.0+nonfree/amd64/iso-cd/firmware-10.4.0-amd64-netinst.iso)
 
 write iso to usb flash memory
 ```
-# lsblk --find usb flash memory device: e.g. /dev/sdb
-# dd if=firmware-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync --write iso
+find usb flash memory device: e.g. /dev/sdb
+# lsblk 
+write iso to flash memory device
+# dd if=firmware-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync
 or
 # cp firmware-10.4.0-amd64-netinst.iso /dev/sdb
 ```
 
-## nice firmware
+## nice firmware - the hard way
+download debian iso e.g. [amd64](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.4.0-amd64-netinst.iso)
+
+write iso to usb flash memory
+
 identify non-free firmware for devices in your machine: wifi, bluetooth etc
 
 look for it in the [kernel subsection](https://packages.debian.org/buster/kernel/)
