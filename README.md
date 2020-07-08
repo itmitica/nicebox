@@ -6,6 +6,8 @@ nice openbox
 ### openbox
 `W-r` rofi: switch running apps, launch apps, run commands, run custom `~/bin` "trick shots" like `kbden.sh` `kbdro.sh` `obe.sh` `obr.sh` `pm.sh` `rsr.sh`    
 `A-f4` close window   
+`A-space` window menu
+`F10` app menu
 `C-A->` next workspace   
 `C-A-<` previous workspace   
 `A-tab` cycle apps   
