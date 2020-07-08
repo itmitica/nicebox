@@ -85,7 +85,9 @@ download debian **non-free** iso e.g. [amd64](http://cdimage.debian.org/cdimage/
 write iso to usb flash memory
 ```
 # lsblk --find usb flash memory device: e.g. /dev/sdb
-# dd if=debian-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync --write iso
+# dd if=firmware-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync --write iso
+or
+# cp firmware-10.4.0-amd64-netinst.iso /dev/sdb
 ```
 
 ## nice firmware
