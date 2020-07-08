@@ -86,7 +86,7 @@ write iso to usb flash memory
 ```
 # lsblk --find usb flash memory device: e.g. /dev/sdb
 # dd if=debian-10.4.0-amd64-netinst.iso of=/dev/sdb status=progress && sync --write iso
-`
+```
 
 ## nice firmware
 identify non-free firmware for devices in your machine: wifi, bluetooth etc
