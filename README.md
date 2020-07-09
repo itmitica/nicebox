@@ -211,7 +211,7 @@ as user, you can set `LC_TIME` and other `LC_` in `.xsessionrc`
 ```
 feh --bg-fill ~/bin/media/walls/simpledesktops.png &
 numlockx on &
-redshift -P -O 5500 &
+redshift -P -O 5000 &
 setxkbmap -layout "us"
 ```
 #### rc.xml
