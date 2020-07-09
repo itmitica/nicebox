@@ -128,8 +128,9 @@ $ su -l
 # wget https://github.com/itmitica/nicebox/archive/master.zip
 # unzip master.zip
 # ./nicebox-master/bin/apps.sh
-# cp -r nicebox-master/bin/ /home/"user"/
-# cp -rT nicebox-master/bin/setup/home/ /home/"user"/
+# cp -rT bin/setup/etc/ /etc/
+# cp -r --no-preserve=mode,ownership nicebox-master/bin/ /home/"user"/
+# cp -rT --no-preserve=mode,ownership nicebox-master/bin/setup/home/ /home/"user"/
 # rm master.zip
 # rm -r nicebox-master
 ```
