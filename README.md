@@ -64,6 +64,10 @@ nice openbox
 
 `C-S-tab` | `C-PageUp` cycle tabs to the left
 
+`A-j` open downloads list
+
+`A-c` clear downloads list
+
 #### vimium
 `d` half page down
 
