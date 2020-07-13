@@ -316,7 +316,7 @@ add it to trusted devices
 
 log out of your desktop session and log back in - this is required for the pairing pop-up asking to always trust the device
 
-if your device keep disconnecting, play with audio profile: switch to HSP/HFP mode, disconnect, reconnect and then switch to A2DP mode
+if your device keeps disconnecting, play with different setup: as audio sink, as headset, also play with different audio profiles: switch to HSP/HFP mode, disconnect, reconnect and then switch to A2DP mode
 
 ### nice optionals
 #### status bar
