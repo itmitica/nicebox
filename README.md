@@ -55,6 +55,9 @@ nice openbox
 
 `delete` delete
 
+### mpv
+`A-f` navigator
+
 ### chromium
 `C-t` new tab
 
