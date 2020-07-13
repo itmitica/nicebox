@@ -168,6 +168,8 @@ xfce4-terminal `$ xfce4-terminal --tab --command ' ' &`
 ### device utils
 blueman
 
+bluez-firmware
+
 pavucontrol
 
 pulseaudio-module-bluetooth
@@ -304,6 +306,17 @@ $ -- user play
 $ pumount /dev/sdb1
 $ lsblk -- check if unmounted succesfully
 ```
+
+### nice bluetooth
+read on [debian BluetoothUser](https://wiki.debian.org/BluetoothUser) [a2dp](https://wiki.debian.org/BluetoothUser/a2dp)
+
+search for your device with Bluetooth Manager
+
+add it to trusted devices
+
+log out of your desktop session and log back in - this is required for the pairing pop-up asking to always trust the device
+
+if your device keep disconnecting, play with audio profile: switch to HSP/HFP mode, disconnect, reconnect and then switch to A2DP mode
 
 ### nice optionals
 #### status bar
