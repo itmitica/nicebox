@@ -247,14 +247,16 @@ $ lsblk -- check if unmounted succesfully
 ```
 
 ### nice bluetooth
-use cli to discover, pair and connect 
+use [cli](https://wiki.archlinux.org/index.php/Bluetooth_headset) to discover, pair and connect 
 
 ```
 $ bluetoothctl
+
+>> agent on
 >> scan on
->> devices
->> trust MAC --tab to autocomplete
->> pair MAC
+>> pair MAC --tab to autocomplete
+>> connect MAC
+>> trust MAC
 ```
 
 use Bluetooth Manager to setup (try as Active Sink if it keeps connecting and disconnecting)
