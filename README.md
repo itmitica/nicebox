@@ -104,69 +104,7 @@ download debian iso e.g. [amd64](https://cdimage.debian.org/debian-cd/current/am
 
 write iso to usb flash memory
 
-identify non-free firmware for devices in your machine: wifi, bluetooth etc
-
-look for it in the [kernel subsection](https://packages.debian.org/buster/kernel/)
-
-or download the [non-free firmware archive](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/)
-
-and copy the (extracted) files to the `firmware` directory on the usb flash memory 
-
-## nice install
-boot from usb and install only system utilities: uncheck Debian desktop environ etc
-
-create your "user"
-
-## nice ad-hoc wifi
-go back on the last step, to a shell
-
-if `target` directory has no `etc/network`, create it
-
-`cp /etc/network/interfaces /target/etc/network/`
-
-## nice download
-reboot
-
-login as "user"
-
-```
-$ su -l
-# cd Downloads
-# wget https://github.com/itmitica/nicebox/archive/master.zip
-# unzip master.zip
-# ./nicebox-master/bin/apps.sh
-# ./nicebox-master/bin/files.sh
-# rm master.zip
-# rm -r nicebox-master
-```
-
-## nice apps
-
-### security
-clamav / clamav-daemon / clamtk
-
-`# gufw`
-
-### sysutils
-firmware-misc-nonfree
-
-htop
-
-numlockx
-
-pmount
-
-rofi `$ rofi-theme-selector`
-
-vim-gtk, has clipboard+ `Shift + " + +, y`
-
-vifm
-
-xfce4-power-manager
-
-xfce4-terminal `$ xfce4-terminal --tab --command ' ' &`
-
-### device utils
+identify non-free firmware for devices in your machine: wifi, 
 blueman
 
 bluez-firmware
@@ -309,15 +247,19 @@ $ lsblk -- check if unmounted succesfully
 ```
 
 ### nice bluetooth
-read on [debian BluetoothUser](https://wiki.debian.org/BluetoothUser) [a2dp](https://wiki.debian.org/BluetoothUser/a2dp)
+use cli to discover, pair and connect 
 
-search for your device with Bluetooth Manager
+```
+$ bluetoothctl
+>> scan on
+>> devices
+>> trust MAC --tab to autocomplete
+>> pair MAC
+```
 
-add it to trusted devices
+use Bluetooth Manager to setup (try as Active Sink if it keeps connecting and disconnecting)
 
-log out of your desktop session and log back in - this is required for the pairing pop-up asking to always trust the device
-
-if your device keeps disconnecting, play with different setup: as audio sink, as headset, also play with different audio profiles: switch to HSP/HFP mode, disconnect, reconnect and then switch to A2DP mode
+read on [debian BluetoothUser](https://wiki.debian.org/BluetoothUser) [a2dp](https://wiki.debian.org/BluetoothUser/a2dp) for alternative solutions
 
 ### nice optionals
 #### status bar
