@@ -263,6 +263,31 @@ use Bluetooth Manager to setup (try as Active Sink if it keeps connecting and di
 
 read on [debian BluetoothUser](https://wiki.debian.org/BluetoothUser) [a2dp](https://wiki.debian.org/BluetoothUser/a2dp) for alternative solutions
 
+### nice keyboard volume control
+#### rc.xml
+edit file with your sink: 0, 1 etc
+
+choose your control utility: amixer, pactl
+
+```
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>pactl set-sink-volume 1 +5%</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>pactl set-sink-volume 1 -5%</command>
+     </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>pactl set-sink-mute 1 toggle</command>
+      </action>
+    </keybind>
+
+```
+
 ### nice optionals
 #### status bar
 ```
