@@ -1,5 +1,5 @@
-feh --bg-fill ~/bin/media/walls/simpledesktops.png &
+feh --randomize --no-fehbg --bg-fill ~/bin/media/walls/* &
 numlockx on &
-redshift -P -O 5000 &
+redshift -P -O 4000 &
 setxkbmap -layout "us" &
 sh ~/bin/pm.sh &
