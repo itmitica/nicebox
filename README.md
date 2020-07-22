@@ -134,6 +134,9 @@ mpv
 ### missing sbin in path
 run su with login: `su -l`
 
+### appearance
+`$ lxappearance`
+
 ### power management
 `$ xfce4-power-manager`
 
