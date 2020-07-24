@@ -55,6 +55,11 @@ nice openbox
 
 `delete` delete
 
+#### mupdf
+```
+:!mupdf file.pdf &
+```
+
 ### mpv
 `A-f` navigator
 
