@@ -130,6 +130,8 @@ links2 `$ links2 -g`
 
 mpv
 
+mupdf
+
 ## nice setup
 ### missing sbin in path
 run su with login: `su -l`
