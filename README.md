@@ -6,6 +6,14 @@ nice openbox
 
 use android phone with usb tether, connected to local wifi
 
+### mac mini wifi notes
+
+follow the steps from https://wiki.debian.org/wl to install wifi firmware, e.g. Broadcom BCM4331 firmware
+
+look for wireless interface: `ip a`, e.g. `wlp2s0`
+
+add `wlp2s0` to Wicd Network Manager wireless interface
+
 ## establish base
 
 download debian netinst
