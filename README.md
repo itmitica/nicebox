@@ -1,6 +1,38 @@
 # nicebox
 nice openbox
 
+## overcome
+### wifi firmware missing
+
+use android phone with usb tether, connected to local wifi
+
+## establish base
+
+download debian netinst
+
+install only standard system utilities
+
+## become nice
+
+```
+$ apt install unzip
+$ cd /tmp
+$ wget https://github.com/itmitica/nicebox/archive/master.zip
+$ unzip master.zip
+$ cd /nicebox-master/bin
+$ ./ apps.sh
+$ ./files.sh <user>
+```
+
+## be the master
+
+call for rofi: `Win+R`
+
+park mouse: type `pm` for `pm.sh`
+
+exit openbox: type `obe` for obe.sh
+
+change keyboard layout: type `kbden` for `kbden.sh`, type `kbdro` for `kbdro.sh`
 
 ## nice shortcuts
 ### openbox
