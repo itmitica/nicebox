@@ -18,7 +18,17 @@ add `wlp2s0` to Wicd Network Manager wireless interface
 ### audio connection "unplugged"
 
 ```
-# pulseaudio -k
+$ pulseaudio -k
+```
+
+or
+
+```
+$ xrandr --props
+$ ...
+$ HDMI1 connected ...
+$ ...
+$ xrandr --output HDMI1 --auto --set "audio" on
 ```
 
 ## tips
