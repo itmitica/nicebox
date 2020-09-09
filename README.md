@@ -6,6 +6,7 @@ nice openbox
 
 use android phone with usb tether, connected to local wifi
 
+
 ### mac mini wifi notes
 
 follow the steps from https://wiki.debian.org/wl to install wifi firmware, e.g. Broadcom BCM4331 firmware
@@ -13,6 +14,21 @@ follow the steps from https://wiki.debian.org/wl to install wifi firmware, e.g. 
 look for wireless interface: `ip a`, e.g. `wlp2s0`
 
 add `wlp2s0` to Wicd Network Manager wireless interface
+
+### audio connection "unplugged"
+
+```
+# pulseaudio -k
+```
+
+## tips
+### bash history search
+#### reverse
+
+```
+CTRL+R - start
+CTRL+G - cancel
+```
 
 ## establish base
 
@@ -23,13 +39,13 @@ install only standard system utilities
 ## become nice
 
 ```
-$ apt install unzip
-$ cd /tmp
-$ wget https://github.com/itmitica/nicebox/archive/master.zip
-$ unzip master.zip
-$ cd /nicebox-master/bin
-$ ./ apps.sh
-$ ./files.sh <user>
+# apt install unzip
+# cd /tmp
+# wget https://github.com/itmitica/nicebox/archive/master.zip
+# unzip master.zip
+# cd /nicebox-master/bin
+# ./ apps.sh
+# ./files.sh <user>
 ```
 
 ## be the master
